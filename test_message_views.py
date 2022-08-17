@@ -32,7 +32,6 @@ db.create_all()
 
 app.config['WTF_CSRF_ENABLED'] = False
 
-
 class MessageViewTestCase(TestCase):
     """Test views for messages."""
 
@@ -48,7 +47,6 @@ class MessageViewTestCase(TestCase):
                                     email="test@test.com",
                                     password="testuser",
                                     image_url=None)
-
         db.session.commit()
 
     def test_add_message(self):
